@@ -1,0 +1,36 @@
+{
+    "name": "ev/ev-secureswitchuser-bundle",
+    "type": "symfony-bundle",
+    "description": "Paginator bundle for Symfony2 to automate pagination and simplify sorting and other features",
+    "keywords": ["secure", "switchuser", "allowedtoswitch", "symfony2", "bundle"],
+    "homepage": "http://github.com/evalandgo/EVSecureSwitchUserBundle",
+    "license": "proprietary",
+
+    "authors": [
+        {
+            "name": "Evalandgo Team",
+            "homepage": "http://evalandgo.com"
+        }
+    ],
+
+    "require": {
+        "php":                          ">=5.3.3",
+        "symfony/framework-bundle":     "~2.0",
+        "symfony/security-bundle":      "~2.1",
+        "twig/twig":                    "~1.5"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "EV\\SecureSwitchUserBundle": ""
+        }
+    },
+
+    "target-dir": "EV/SecureSwitchUserBundle",
+    
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

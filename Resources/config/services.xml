@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    
+    <services>
+        <service id="ev_secure_switch_user.handler.control" class="EV\SecureSwitchUserBundle\Handler\ControlHandler">
+            <argument>%ev_secure_switch_user.allowed_to_switch%</argument>
+        </service>
+
+        <service id="ev_secure_switch_user.listener.switchuser" class="EV\SecureSwitchUserBundle\EventListener\SwitchUserListener">
+            <argument type="service" id="ev_secure_switch_user.handler.control" />
+            <argument type="service" id="security.context"/>
+            <tag name="kernel.event_listener" event="security.switch_user" method="onSecuritySwitchUser" />
+        </service>
+    </services>
+    
+    
+</container>
