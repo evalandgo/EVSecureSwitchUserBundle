@@ -1,6 +1,9 @@
 # EVSecureSwitchUserBundle
+Secure Switch User bundle for Symfony2 to condition the right of a user to switch with another user through a hierarchical relationship
 
 ## Features
+- EventListener on SwitchUser for more security
+- Easy configuration in the security.yml file
 
 ## Installation and configuration
 

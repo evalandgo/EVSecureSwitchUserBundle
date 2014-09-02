@@ -1,7 +1,7 @@
 {
     "name": "ev/ev-secureswitchuser-bundle",
     "type": "symfony-bundle",
-    "description": "Paginator bundle for Symfony2 to automate pagination and simplify sorting and other features",
+    "description": "Secure Switch User bundle for Symfony2 to condition the right of a user to switch with another user through a hierarchical relationship",
     "keywords": ["secure", "switchuser", "allowedtoswitch", "symfony2", "bundle"],
     "homepage": "http://github.com/evalandgo/EVSecureSwitchUserBundle",
     "license": "proprietary",
