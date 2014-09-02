@@ -14,7 +14,7 @@ In composer.json file, add :
 {
     "repositories": [
         {
-            "type": "vcs",
+            "type": "git",
             "url":  "git@github.com:evalandgo/EVSecureSwitchUserBundle.git"
         }
     ],
