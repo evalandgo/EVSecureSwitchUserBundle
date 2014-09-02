@@ -21,6 +21,7 @@ In composer.json file, add :
 }
 ```
 For download this bundle, a permission is requiered on this repository and the Composer needs to use a **SSH** connexion on GitHub.
+
 More informations : [Generating SSH Keys](https://help.github.com/articles/generating-ssh-keys).
 
 In app/AppKernel.php file, add :
